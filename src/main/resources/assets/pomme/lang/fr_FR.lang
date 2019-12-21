@@ -1,0 +1,18 @@
+tile.OrangiumOre.name=Minearai d'Orangium
+tile.GreenBlock.name=Block Vert
+tile.Portal.name=Portail
+tile.InvisibleBlock.name=Block Invisible
+
+item.OrangiumIngot.name=Lingot d'Orangium
+item.OrangiumHelmet.name=Casque en Orangium
+item.OrangiumChestPlate.name=Plastron en Orangium
+item.OrangiumLeggings.name=Pantalon en Orangium
+item.OrangiumBoots.name=Bottes en Orangium
+
+item.testMeta.1.name=Test 1
+item.testMeta.2.name=Test 3
+item.testMeta.3.name=Test 3
+
+itemGroup.PommeTab=Pomme
+
+menu.name=Discord

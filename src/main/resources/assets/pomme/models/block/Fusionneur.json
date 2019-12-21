@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "pomme:blocks/FusionneurTop",
+        "front": "pomme:blocks/FusionneurFront",
+        "side": "pomme:blocks/FusionneurSide"
+    }
+}

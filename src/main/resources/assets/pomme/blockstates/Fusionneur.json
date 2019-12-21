@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": {"model":  "pomme:Fusionneur"},
+        "facing=north": { "model": "pomme:Fusionneur", "y": 180 },
+        "facing=east":  { "model": "pomme:Fusionneur", "y": 270 },
+        "facing=south": { "model": "pomme:Fusionneur" },
+        "facing=west":  { "model": "pomme:Fusionneur", "y": 90 }
+    }
+}

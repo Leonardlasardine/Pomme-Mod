@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "pomme:blocks/InvisibleBlock",
+        "down": "pomme:blocks/InvisibleBlock",
+        "up": "pomme:blocks/InvisibleBlock",
+        "north": "pomme:blocks/glass",
+        "east": "pomme:blocks/glass",
+        "south": "pomme:blocks/glass",
+        "west": "pomme:blocks/glass"
+    }
+}

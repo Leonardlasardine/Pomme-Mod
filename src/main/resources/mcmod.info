@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pomme",
+  "name": "Pomme mod",
+  "description": "Mod pomme de Léonard. vous pouvez en faire un tarte !",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://www.google.com",
+  "updateUrl": "",
+  "authorList": ["Leonard"],
+  "credits": "Le premier mod de Léonard codé avec IntelliJ idea.",
+  "logoFile": "pomme:texture/gui/ModLogo",
+  "screenshots": [],
+  "dependencies": []
+}
+]
