@@ -4,6 +4,7 @@ import fr.leonard.pomme.Events.ConfigChanged;
 import fr.leonard.pomme.Events.EndermanJoinWorldEvent;
 import fr.leonard.pomme.Events.OpenGuiEvent;
 import fr.leonard.pomme.Events.PlayerJoin;
+import fr.leonard.pomme.config.PommeModConfig;
 import fr.leonard.pomme.generation.OreGeneration;
 import fr.leonard.pomme.proxy.CommonProxy;
 import fr.leonard.pomme.proxy.RefMod;
@@ -14,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = RefMod.MODID, name = RefMod.NAME, version = RefMod.VERSION, guiFactory ="fr.leonard.pomme.gui.PommeModGuiFactory")
+@Mod(modid = RefMod.MODID, name = RefMod.NAME, version = RefMod.VERSION, guiFactory="fr.leonard.pomme.config.PommeModGuiFactory")
 public class PommeMod {
 
     public static final PommeTab creativeTab = new PommeTab();
@@ -33,6 +34,7 @@ public class PommeMod {
         MinecraftForge.EVENT_BUS.register(new OpenGuiEvent());
         MinecraftForge.EVENT_BUS.register(new ConfigChanged());
         MinecraftForge.EVENT_BUS.register(new PlayerJoin());
+        PommeModConfig.preInit(e);
     }
 
     @Mod.EventHandler

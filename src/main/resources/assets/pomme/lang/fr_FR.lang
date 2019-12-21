@@ -16,3 +16,5 @@ item.testMeta.3.name=Test 3
 itemGroup.PommeTab=Pomme
 
 menu.name=Discord
+
+pomme.config.showWelcomeMessage.title=Afficher un message à la connexion au monde
