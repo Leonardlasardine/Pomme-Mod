@@ -7,6 +7,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import static net.minecraft.world.DimensionType.NETHER;
+
 public class EndermanJoinWorldEvent {
 
     @SubscribeEvent

@@ -8,11 +8,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class OpenGuiEvent {
 
     @SubscribeEvent
-    public void onOpenGui(GuiOpenEvent event)
+    public void onOpenGui(GuiOpenEvent e)
     {
-        if(event.getGui() != null && event.getGui().getClass() == GuiMainMenu.class)
+        if(e.getGui() != null && e.getGui().getClass() == GuiMainMenu.class)
         {
-            event.setGui(new GuiCustomMainMenu());
+            e.setGui(new GuiCustomMainMenu());
         }
     }
 }

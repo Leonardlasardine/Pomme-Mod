@@ -18,6 +18,8 @@ public class ItemMod {
 
     public static Item OrangiumIngot, OrangiumHelmet, OrangiumChestPlate, OrangiumLeggings, OrangiumBoots, testMeta;
 
+    public static final Item OrangiumSword = new OrangiumSwordItem("OrangiumSword", ToolMaterials.orangiumMat);
+
     public void initItems(){
         OrangiumIngot = new Item().setRegistryName("OrangiumIngot").setUnlocalizedName("OrangiumIngot").setCreativeTab(PommeMod.creativeTab);
         OrangiumHelmet = new OrangiumHelmetItem("OrangiumHelmet",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.HEAD);
@@ -34,6 +36,7 @@ public class ItemMod {
         registerItem(OrangiumLeggings);
         registerItem(OrangiumBoots);
         registerItem(testMeta);
+        registerItem(OrangiumSword);
     }
 
     @SideOnly(Side.CLIENT)
@@ -43,6 +46,8 @@ public class ItemMod {
         registerRender(OrangiumChestPlate, 0);
         registerRender(OrangiumLeggings, 0);
         registerRender(OrangiumBoots, 0);
+        registerRender(OrangiumSword,0);
+
         registerRenderMeta(testMeta, 0);
         registerRenderMeta(testMeta, 1);
         registerRenderMeta(testMeta, 2);
@@ -71,5 +76,15 @@ public class ItemMod {
                 15,
                 SoundEvents.ITEM_ARMOR_EQUIP_GOLD,
                 3);
+    }
+
+    public static class ToolMaterials{
+        public static final Item.ToolMaterial orangiumMat = EnumHelper.addToolMaterial(
+                "orangiumMat",
+                4,
+                3000,
+                12.0f,
+                5.0f,
+                10);
     }
 }
