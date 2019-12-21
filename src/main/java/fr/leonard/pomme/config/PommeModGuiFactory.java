@@ -18,24 +18,20 @@ import java.util.Set;
 public class PommeModGuiFactory implements IModGuiFactory {
 
     @Override
-    public void initialize(Minecraft minecraftInstance)
-    {}
+    public void initialize(Minecraft minecraftInstance) {}
 
     @Override
-    public Class mainConfigGuiClass()
-    {
+    public Class mainConfigGuiClass() {
         return PommeModConfigGui.class;
     }
 
     @Override
-    public Set<RuntimeOptionCategoryElement> runtimeGuiCategories()
-    {
+    public Set<RuntimeOptionCategoryElement> runtimeGuiCategories() {
         return null;
     }
 
     @Override
-    public IModGuiFactory.RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element)
-    {
+    public IModGuiFactory.RuntimeOptionGuiHandler getHandlerFor(RuntimeOptionCategoryElement element) {
         return null;
     }
 
@@ -48,13 +44,13 @@ public class PommeModGuiFactory implements IModGuiFactory {
     {
         public PommeModConfigGui(GuiScreen parent)
         {
-            super(parent, getConfigElements(), RefMod.MODID, false, false, I18n.format("modtuto.config.gui.mainTitle", new Object[] {}));
+            super(parent, getConfigElements(), RefMod.MODID, true, false, I18n.format("pomme.config.gui.mainTitle", new Object[] {}));
         }
 
         private static List<IConfigElement> getConfigElements()
         {
             List <IConfigElement>list = new ArrayList<IConfigElement>();
-            list.add(new DummyConfigElement.DummyCategoryElement("modtutoConfig", "modtuto.config.gui.generalTitle", new ConfigElement(PommeModConfig.getConfig().getCategory(Configuration.CATEGORY_GENERAL)).getChildElements()));
+            list.add(new DummyConfigElement.DummyCategoryElement("Général", "pomme.config.generalTitle", new ConfigElement(PommeModConfig.getConfig().getCategory(Configuration.CATEGORY_GENERAL)).getChildElements()));
             return list;
         }
     }

@@ -8,7 +8,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class PommeModConfig {
 
@@ -43,7 +42,7 @@ public class PommeModConfig {
 
         prop = config.get(Configuration.CATEGORY_GENERAL, "welcomeMessage", "Bienvenue à toi %player%");
         prop.setComment("The code %player% will be replaced by player's name");
-        prop.setLanguageKey("modtuto.config.welcomeMessage.title");
+        prop.setLanguageKey("pomme.config.welcomeMessage.title");
 
         welcomeMessage = prop.getString();
         if(welcomeMessage.equals(""))

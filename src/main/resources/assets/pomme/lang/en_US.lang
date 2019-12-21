@@ -13,8 +13,11 @@ item.testMeta.1.name=Test 1
 item.testMeta.2.name=Test 3
 item.testMeta.3.name=Test 3
 
-itemGroup.PommeTab=Pomme
+itemGroup.pomme=Pomme
 
 menu.name=Discord
 
 pomme.config.showWelcomeMessage.title=Show Welcome Message
+pomme.config.welcomeMessage.title=Welcome Message
+pomme.config.gui.mainTitle=Pomme Mod Configuration
+pomme.config.generalTitle=Generral

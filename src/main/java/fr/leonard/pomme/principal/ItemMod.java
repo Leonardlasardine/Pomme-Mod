@@ -1,11 +1,15 @@
 package fr.leonard.pomme.principal;
 
-import fr.leonard.pomme.itemclass.testMetaItem;
+import fr.leonard.pomme.itemclass.*;
 import fr.leonard.pomme.proxy.RefMod;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -16,10 +20,10 @@ public class ItemMod {
 
     public void initItems(){
         OrangiumIngot = new Item().setRegistryName("OrangiumIngot").setUnlocalizedName("OrangiumIngot").setCreativeTab(PommeMod.creativeTab);
-        OrangiumHelmet = new Item().setRegistryName("OrangiumHelmet").setUnlocalizedName("OrangiumHelmet").setCreativeTab(PommeMod.creativeTab);
-        OrangiumChestPlate = new Item().setRegistryName("OrangiumChestPlate").setUnlocalizedName("OrangiumChestPlate").setCreativeTab(PommeMod.creativeTab);
-        OrangiumLeggings = new Item().setRegistryName("OrangiumLeggings").setUnlocalizedName("OrangiumLeggings").setCreativeTab(PommeMod.creativeTab);
-        OrangiumBoots = new Item().setRegistryName("OrangiumBoots").setUnlocalizedName("OrangiumBoots").setCreativeTab(PommeMod.creativeTab);
+        OrangiumHelmet = new OrangiumHelmetItem("OrangiumHelmet",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.HEAD);
+        OrangiumChestPlate = new OrangiumChestPlateItem("OrangiumChestPlate",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.CHEST);
+        OrangiumLeggings = new OrangiumLeggingsItem("OrangiumLeggings",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.LEGS);
+        OrangiumBoots = new OrangiumBootsItem("OrangiumBoots",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.FEET);
         testMeta = new testMetaItem();
     }
 
@@ -57,5 +61,15 @@ public class ItemMod {
 
     private void registerRenderMeta(Item item, int meta){
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(new ResourceLocation(RefMod.MODID, item.getUnlocalizedName().substring(5)+meta), "inventory"));
+    }
+
+    public static class ArmorMaterials {
+        public static final ItemArmor.ArmorMaterial orangiumMat = EnumHelper.addArmorMaterial(
+                "orangiumMat",
+                RefMod.MODID + ":OrangiumArmor",
+                70, new int[]{4, 7, 9, 4},
+                15,
+                SoundEvents.ITEM_ARMOR_EQUIP_GOLD,
+                3);
     }
 }
