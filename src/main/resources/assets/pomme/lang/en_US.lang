@@ -2,12 +2,17 @@ tile.OrangiumOre.name=Orangium Ore
 tile.GreenBlock.name=Green Block
 tile.Portal.name=Portal
 tile.InvisibleBlock.name=Invisible Block
+tile.Fusionneur.name=Fusionneur
 
 item.OrangiumIngot.name=Orangium Ingot
 item.OrangiumHelmet.name=Orangium Helmet
 item.OrangiumChestPlate.name=Orangium ChestPlate
 item.OrangiumLeggings.name=Orangium Leggings
 item.OrangiumBoots.name=Orangium Boots
+item.OrangiumSword.name=Orangium Sword
+item.OrangiumPickaxe.name=Orangium Pickaxe
+item.OrangiumShovel.name=Orangium Shovel
+item.OrangiumHoe.name=Orangium Goe
 
 item.testMeta.1.name=Test 1
 item.testMeta.2.name=Test 3
@@ -20,4 +25,6 @@ menu.name=Discord
 pomme.config.showWelcomeMessage.title=Show Welcome Message
 pomme.config.welcomeMessage.title=Welcome Message
 pomme.config.gui.mainTitle=Pomme Mod Configuration
-pomme.config.generalTitle=Generral
+pomme.config.generalTitle=General
+pomme.config.MainMenu.title=Change the main menu of Minecraft
+PommeModButton.name=Pomme Mod

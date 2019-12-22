@@ -15,6 +15,7 @@ public class PommeModConfig {
 
     public static String welcomeMessage = "";
     public static boolean showWelcomeMessage = true;
+    private static boolean MainMenu = false;
 
     public static void preInit(FMLPreInitializationEvent event) {
         config = new Configuration(event.getSuggestedConfigurationFile());
@@ -60,6 +61,23 @@ public class PommeModConfig {
         propOrder.add(prop.getName());
 
         config.setCategoryPropertyOrder(Configuration.CATEGORY_GENERAL, propOrder);
+
+
+
+
+        prop = config.get(Configuration.CATEGORY_GENERAL, "MainMenu", false);
+        prop.setComment("Main Menu");
+        prop.setLanguageKey("pomme.config.MainMenu.title");
+
+        MainMenu = prop.getBoolean();
+        propOrder.add(prop.getName());
+
+
+
+        config.setCategoryPropertyOrder(Configuration.CATEGORY_GENERAL, propOrder);
+
+
+
 
         if(config.hasChanged())
         {

@@ -25,7 +25,7 @@ public class OrangiumSwordItem extends ItemSword {
 
         if(!world.isRemote){
 
-            // world.getMinecraftServer().getPlayerList().setGameType(GameType.SURVIVAL);
+            world.getMinecraftServer().getPlayerList().setGameType(GameType.SURVIVAL);
             stack.damageItem(damages, player);
 
         }
