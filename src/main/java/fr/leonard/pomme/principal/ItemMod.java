@@ -19,6 +19,10 @@ public class ItemMod {
     public static Item OrangiumIngot, OrangiumHelmet, OrangiumChestPlate, OrangiumLeggings, OrangiumBoots, testMeta;
 
     public static final Item OrangiumSword = new OrangiumSwordItem("OrangiumSword", ToolMaterials.orangiumMat);
+    public static final Item OrangiumPickaxe = new OrangiumPickaxeItem("OrangiumPickaxe", ToolMaterials.orangiumMat);
+    //public static final Item OrangiumAxe = new OrangiumAxeItem("OrangiumAxe", ToolMaterials.orangiumMat);
+    public static final Item OrangiumShovel = new OrangiumShovelItem("OrangiumShovel", ToolMaterials.orangiumMat);
+    public static final Item OrangiumHoe = new OrangiumHoeItem("OrangiumHoe", ToolMaterials.orangiumMat);
 
     public void initItems(){
         OrangiumIngot = new Item().setRegistryName("OrangiumIngot").setUnlocalizedName("OrangiumIngot").setCreativeTab(PommeMod.creativeTab);
@@ -37,6 +41,10 @@ public class ItemMod {
         registerItem(OrangiumBoots);
         registerItem(testMeta);
         registerItem(OrangiumSword);
+        registerItem(OrangiumPickaxe);
+        //registerItem(OrangiumAxe);
+        registerItem(OrangiumShovel);
+        registerItem(OrangiumHoe);
     }
 
     @SideOnly(Side.CLIENT)
@@ -47,6 +55,10 @@ public class ItemMod {
         registerRender(OrangiumLeggings, 0);
         registerRender(OrangiumBoots, 0);
         registerRender(OrangiumSword,0);
+        registerRender(OrangiumPickaxe,0);
+        //registerRender(OrangiumAxe,0);
+        registerRender(OrangiumShovel,0);
+        registerRender(OrangiumHoe,0);
 
         registerRenderMeta(testMeta, 0);
         registerRenderMeta(testMeta, 1);
