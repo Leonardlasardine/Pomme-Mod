@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = RefMod.MODID, name = RefMod.NAME, version = RefMod.VERSION, guiFactory="fr.leonard.pomme.config.PommeModGuiFactory")
+@Mod(modid = RefMod.MODID, name = RefMod.NAME, version = RefMod.VERSION, guiFactory="fr.leonard.pomme.config.PommeModGuiFactory", updateJSON="https://github.com/Leonardlasardine/Pomme-Mod/blob/master/Pomme%20Mod%20Update.json")
 public class PommeMod {
 
     public static final PommeTab creativeTab = new PommeTab();

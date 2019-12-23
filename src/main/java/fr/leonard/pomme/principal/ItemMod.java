@@ -25,7 +25,7 @@ public class ItemMod {
     public static final Item OrangiumHoe = new OrangiumHoeItem("OrangiumHoe", ToolMaterials.orangiumMat);
 
     public void initItems(){
-        OrangiumIngot = new Item().setRegistryName("OrangiumIngot").setUnlocalizedName("OrangiumIngot").setCreativeTab(PommeMod.creativeTab);
+        OrangiumIngot = new OrangiumIngotItem("OrangiumIngot");
         OrangiumHelmet = new OrangiumHelmetItem("OrangiumHelmet",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.HEAD);
         OrangiumChestPlate = new OrangiumChestPlateItem("OrangiumChestPlate",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.CHEST);
         OrangiumLeggings = new OrangiumLeggingsItem("OrangiumLeggings",ArmorMaterials.orangiumMat,1, EntityEquipmentSlot.LEGS);
