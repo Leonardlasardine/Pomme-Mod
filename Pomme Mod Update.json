@@ -1,0 +1,12 @@
+   {
+     "homepage": "https://github.com/Leonardlasardine/Pomme-Mod",
+     "promos": {
+       "1.10.2-latest" : "Pomme Mod-1.3.0",
+       "1.10.2-recomended" : "Pomme Mod-1.2.1"
+     },
+     "1.10.2" : {
+       "Pomme Mod-1.3.0" : "Ajout des crafts des outils en Orangium et ajout de l'Ore dictionary."
+       "Pomme Mod-1.2.1" : "Changement du menu principal",
+       "Pomme Mod-1.0.0.1" : "Ajout de l'armure en Orangium et changements dans la configuration du mod. Changements de texture du casque en Orangium et correction de fautes d'orthographes."
+     }
+   }
