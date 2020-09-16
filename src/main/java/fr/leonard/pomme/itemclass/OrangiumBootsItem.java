@@ -5,14 +5,12 @@ import fr.leonard.pomme.principal.PommeMod;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
 public class OrangiumBootsItem extends ItemArmor {
     public OrangiumBootsItem(String name, ArmorMaterial materialIn, int renderIndexIn, EntityEquipmentSlot equipmentSlotIn) {
         super(materialIn, renderIndexIn, equipmentSlotIn);
-        this.setRegistryName(name);
-        this.setUnlocalizedName(name);
-        OreDictionary.registerOre("name", ItemMod.OrangiumBoots);
+        this.setRegistryName("OrangiumBoots");
+        this.setUnlocalizedName("OrangiumBoots");
         this.setCreativeTab(PommeMod.creativeTab);
     }
 
